@@ -1,0 +1,27 @@
+{
+  "name": "family",
+  "version": "0.3.1",
+  "api_version": "^1.0",
+  "author": "ItzDevoo",
+  "description": "Your family's home base: paydays, bills and take-home estimates, shared ideas and goals, and a private photo and video library.",
+  "license": "MIT",
+  "type": "standalone",
+  "icon": "House",
+  "backend": {
+    "entry": "backend/index.ts"
+  },
+  "frontend": {
+    "entry": "frontend/index.html"
+  },
+  "permissions": [
+    "data.sql:self",
+    "broadcast.clients",
+    "notifications.push",
+    "runtime.schedule",
+    "storage.file:self"
+  ],
+  "sidebar": {
+    "contributes": true,
+    "section": "Family"
+  }
+}
